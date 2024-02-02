@@ -1,14 +1,14 @@
 Create table Pais(
-    Id tinyint primary key,
-    Nombre Varchar(15),
-    Tamanio varchar(15)) Engine=InnoDB;
+                     Id tinyint primary key,
+                     Nombre Varchar(15),
+                     Tamanio varchar(15)) Engine=InnoDB;
 
 Create table Persona(
-    Id int primary key,
-    Nombre Varchar(15),
-    Apellido varchar(15),
-    Edad tinyint,
-    Pais tinyint)Engine=InnoDB;
+                        Id int primary key,
+                        Nombre Varchar(15),
+                        Apellido varchar(15),
+                        Edad tinyint,
+                        Pais tinyint)Engine=InnoDB;
 
 Alter Table Persona add Foreign key (Pais) References Pais(Id);
 
